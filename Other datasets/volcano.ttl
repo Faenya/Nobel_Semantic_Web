@@ -1,0 +1,901 @@
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix geo:  <https://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix locah:  <http://data.archiveshub.ac.uk/def/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix moac:  <http://observedchange.com/moac/ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix bio:  <http://purl.org/vocab/bio/0.1/> .
+@prefix rsctx:  <http://softeng.polito.it/rsctx#> .
+@prefix dbpac:  <http://dbpedia.org/page/Category:> .
+
+<1>     rdf:type       dbo:number ;
+        dbo:year       "2010" ;
+        dbo:month      "1" ;
+        dbo:volcano    "Tungurahua" ;
+        dbo:location   "Ecuador" ;
+        dbo:country    "Ecuador" ;
+        geo:lat        "-1.467" ;
+        geo:long       "-78.442" ;
+        dbo:elevation  "5023" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        locah:Level    "3" .
+
+<2>     rdf:type       dbo:number ;
+        dbo:year       "2010" ;
+        dbo:month      "3" ;
+        dbo:day        "31" ;
+        dbo:volcano    "Eyjafjallajokull" ;
+        dbo:location   "Iceland-S" ;
+        dbo:country    "Iceland" ;
+        geo:lat        "63.63" ;
+        geo:long       "-19.62" ;
+        dbo:elevation  "1666" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        locah:Level    "2" ;
+        bio:death      "2" .
+
+<3>     rdf:type                        dbo:number ;
+        dbo:year                        "2010" ;
+        dbo:month                       "5" ;
+        dbo:day                         "27" ;
+        dbo:volcano                     "Pacaya" ;
+        dbo:location                    "Guatemala" ;
+        dbo:country                     "Guatemala" ;
+        geo:lat                         "14.381" ;
+        geo:long                        "-90.601" ;
+        dbo:elevation                   "2552" ;
+        dbo:eruption                    "Complex volcano" ;
+        dbo:status                      "Historical" ;
+        locah:Level                     "1" ;
+        bio:death                       "1" ;
+        moac:MissingPersons             "3" ;
+        dbpac:Destruction_of_buildings  "3" .
+
+<4>     rdf:type       dbo:number ;
+        dbo:year       "2010" ;
+        dbo:month      "5" ;
+        dbo:day        "29" ;
+        dbo:volcano    "Sarigan" ;
+        dbo:location   "Mariana Is-C Pacific" ;
+        dbo:country    "United States" ;
+        geo:lat        "16.708" ;
+        geo:long       "145.78" ;
+        dbo:elevation  "538" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Holocene" .
+
+<5>     rdf:type       dbo:number ;
+        dbo:year       "2010" ;
+        dbo:month      "8" ;
+        dbo:day        "6" ;
+        dbo:volcano    "Karangetang [Api Siau]" ;
+        dbo:location   "Sangihe Is-Indonesia" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "2.78" ;
+        geo:long       "125.48" ;
+        dbo:elevation  "1784" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        locah:Level    "3" ;
+        bio:death      "4" ;
+        rsctx:injury   "5" .
+
+<6>     rdf:type       dbo:number ;
+        dbo:year       "2010" ;
+        dbo:month      "8" ;
+        dbo:day        "30" ;
+        dbo:volcano    "Sinabung" ;
+        dbo:location   "Sumatra" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "3.17" ;
+        geo:long       "98.392" ;
+        dbo:elevation  "2460" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Holocene" ;
+        bio:death      "2" .
+
+<7>     rdf:type       dbo:number ;
+        dbo:year       "2010" ;
+        dbo:month      "10" ;
+        dbo:day        "26" ;
+        dbo:volcano    "Merapi" ;
+        dbo:location   "Java" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "-7.542" ;
+        geo:long       "110.442" ;
+        dbo:elevation  "2947" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        bio:death      "367" ;
+        rsctx:injury   "277" ;
+        dbo:damage     "600" .
+
+<8>     rdf:type       dbo:number ;
+        dbo:year       "2010" ;
+        dbo:month      "11" ;
+        dbo:volcano    "Tungurahua" ;
+        dbo:location   "Ecuador" ;
+        dbo:country    "Ecuador" ;
+        geo:lat        "-1.467" ;
+        geo:long       "-78.442" ;
+        dbo:elevation  "5023" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        locah:Level    "3" .
+
+<9>     rdf:type       dbo:number ;
+        dbo:year       "2010" ;
+        dbo:month      "12" ;
+        dbo:day        "28" ;
+        dbo:volcano    "Tengger Caldera" ;
+        dbo:location   "Java" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "-7.942" ;
+        geo:long       "112.95" ;
+        dbo:elevation  "2329" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" .
+
+<10>    rdf:type       dbo:number ;
+        dbo:year       "2011" ;
+        dbo:month      "1" ;
+        dbo:day        "3" ;
+        dbo:volcano    "Merapi" ;
+        dbo:location   "Java" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "-7.542" ;
+        geo:long       "110.442" ;
+        dbo:elevation  "2947" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        bio:death      "1" ;
+        rsctx:injury   "1" .
+
+<11>    rdf:type       dbo:number ;
+        dbo:year       "2011" ;
+        dbo:month      "1" ;
+        dbo:day        "28" ;
+        dbo:volcano    "Kirishima" ;
+        dbo:location   "Kyushu-Japan" ;
+        dbo:country    "Japan" ;
+        geo:lat        "31.93" ;
+        geo:long       "130.87" ;
+        dbo:elevation  "1700" ;
+        dbo:eruption   "Shield volcano" ;
+        dbo:status     "Historical" .
+
+<12>    rdf:type       dbo:number ;
+        dbo:year       "2011" ;
+        dbo:month      "2" ;
+        dbo:day        "23" ;
+        dbo:volcano    "Bulusan" ;
+        dbo:location   "Luzon-Philippines" ;
+        dbo:country    "Philippines" ;
+        geo:lat        "12.77" ;
+        geo:long       "124.05" ;
+        dbo:elevation  "1565" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        locah:Level    "2" ;
+        bio:death      "1" .
+
+<13>    rdf:type       dbo:number ;
+        dbo:year       "2011" ;
+        dbo:month      "3" ;
+        dbo:day        "18" ;
+        dbo:volcano    "Karangetang [Api Siau]" ;
+        dbo:location   "Sangihe Is-Indonesia" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "2.78" ;
+        geo:long       "125.48" ;
+        dbo:elevation  "1784" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" .
+
+<14>    rdf:type       dbo:number ;
+        dbo:year       "2011" ;
+        dbo:month      "4" ;
+        dbo:volcano    "Tungurahua" ;
+        dbo:location   "Ecuador" ;
+        dbo:country    "Ecuador" ;
+        geo:lat        "-1.467" ;
+        geo:long       "-78.442" ;
+        dbo:elevation  "5023" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        locah:Level    "4" .
+
+<15>    rdf:type       dbo:number ;
+        dbo:year       "2011" ;
+        dbo:month      "6" ;
+        dbo:day        "4" ;
+        dbo:volcano    "Puyehue" ;
+        dbo:location   "Chile-C" ;
+        dbo:country    "Chile" ;
+        geo:lat        "-40.59" ;
+        geo:long       "-72.117" ;
+        dbo:elevation  "2236" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Holocene" ;
+        locah:Level    "4" .
+
+<16>    rdf:type       dbo:number ;
+        dbo:year       "2011" ;
+        dbo:month      "6" ;
+        dbo:day        "22" ;
+        dbo:volcano    "Nabro" ;
+        dbo:location   "Africa-NE" ;
+        dbo:country    "Eritrea" ;
+        geo:lat        "13.37" ;
+        geo:long       "41.7" ;
+        dbo:elevation  "2218" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Holocene" ;
+        locah:Level    "3" ;
+        bio:death      "31" .
+
+<17>    rdf:type       dbo:number ;
+        dbo:year       "2011" ;
+        dbo:month      "7" ;
+        dbo:day        "9" ;
+        dbo:volcano    "Katla" ;
+        dbo:location   "Iceland-S" ;
+        dbo:country    "Iceland" ;
+        geo:lat        "63.63" ;
+        geo:long       "-19.05" ;
+        dbo:elevation  "1512" ;
+        dbo:eruption   "Subglacial volcano" ;
+        dbo:status     "Historical" .
+
+<18>    rdf:type       dbo:number ;
+        dbo:year       "2011" ;
+        dbo:month      "7" ;
+        dbo:day        "17" ;
+        dbo:volcano    "Lokon-Empung" ;
+        dbo:location   "Sulawesi-Indonesia" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "1.358" ;
+        geo:long       "124.792" ;
+        dbo:elevation  "1580" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        bio:death      "1" .
+
+<19>    rdf:type       dbo:number ;
+        dbo:year       "2011" ;
+        dbo:month      "12" ;
+        dbo:day        "27" ;
+        dbo:volcano    "Gamalama" ;
+        dbo:location   "Halmahera-Indonesia" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        ".8" ;
+        geo:long       "127.325" ;
+        dbo:elevation  "1715" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        locah:Level    "3" ;
+        bio:death      "4" .
+
+<20>    rdf:type       dbo:number ;
+        dbo:year       "2012" ;
+        dbo:month      "2" ;
+        dbo:day        "10" ;
+        dbo:volcano    "Kilauea" ;
+        dbo:location   "Hawaiian Is" ;
+        dbo:country    "United States" ;
+        geo:lat        "19.425" ;
+        geo:long       "-155.292" ;
+        dbo:elevation  "1222" ;
+        dbo:eruption   "Shield volcano" ;
+        dbo:status     "Historical" .
+
+<21>    rdf:type                        dbo:number ;
+        dbo:year                        "2012" ;
+        dbo:month                       "3" ;
+        dbo:day                         "2" ;
+        dbo:volcano                     "Kilauea" ;
+        dbo:location                    "Hawaiian Is" ;
+        dbo:country                     "United States" ;
+        geo:lat                         "19.425" ;
+        geo:long                        "-155.292" ;
+        dbo:elevation                   "1222" ;
+        dbo:eruption                    "Shield volcano" ;
+        dbo:status                      "Historical" ;
+        dbpac:Destruction_of_buildings  "1" .
+
+<22>    rdf:type       dbo:number ;
+        dbo:year       "2012" ;
+        dbo:month      "12" ;
+        dbo:day        "12" ;
+        dbo:volcano    "Tolbachik" ;
+        dbo:location   "Kamchatka" ;
+        dbo:country    "Russia" ;
+        geo:lat        "55.83" ;
+        geo:long       "160.33" ;
+        dbo:elevation  "3682" ;
+        dbo:eruption   "Shield volcano" ;
+        dbo:status     "Historical" .
+
+<23>    rdf:type       dbo:number ;
+        dbo:year       "2013" ;
+        dbo:month      "2" ;
+        dbo:day        "12" ;
+        dbo:volcano    "Merapi" ;
+        dbo:location   "Java" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "-7.542" ;
+        geo:long       "110.442" ;
+        dbo:elevation  "2947" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        bio:death      "1" ;
+        rsctx:injury   "1" .
+
+<24>    rdf:type       dbo:number ;
+        dbo:year       "2013" ;
+        dbo:month      "2" ;
+        dbo:volcano    "Paluweh" ;
+        dbo:location   "Lesser Sunda Is" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "-8.32" ;
+        geo:long       "121.708" ;
+        dbo:elevation  "875" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" .
+
+<25>    rdf:type       dbo:number ;
+        dbo:year       "2013" ;
+        dbo:month      "5" ;
+        dbo:day        "7" ;
+        dbo:volcano    "Mayon" ;
+        dbo:location   "Luzon-Philippines" ;
+        dbo:country    "Philippines" ;
+        geo:lat        "13.257" ;
+        geo:long       "123.685" ;
+        dbo:elevation  "2462" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        bio:death      "5" ;
+        rsctx:injury   "8" .
+
+<26>    rdf:type       dbo:number ;
+        dbo:year       "2013" ;
+        dbo:month      "8" ;
+        dbo:day        "10" ;
+        dbo:volcano    "Paluweh" ;
+        dbo:location   "Lesser Sunda Is" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "-8.32" ;
+        geo:long       "121.708" ;
+        dbo:elevation  "875" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        locah:Level    "3" ;
+        bio:death      "5" .
+
+<27>    rdf:type       dbo:number ;
+        dbo:year       "2013" ;
+        dbo:month      "9" ;
+        dbo:day        "1" ;
+        dbo:volcano    "Ubinas" ;
+        dbo:location   "Peru" ;
+        dbo:country    "Peru" ;
+        geo:lat        "-16.355" ;
+        geo:long       "-70.903" ;
+        dbo:elevation  "5672" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" .
+
+<28>    rdf:type       dbo:number ;
+        dbo:year       "2013" ;
+        dbo:month      "9" ;
+        dbo:day        "4" ;
+        dbo:volcano    "Sakura-jima" ;
+        dbo:location   "Kyushu-Japan" ;
+        dbo:country    "Japan" ;
+        geo:lat        "31.58" ;
+        geo:long       "130.67" ;
+        dbo:elevation  "1117" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" .
+
+<29>    rdf:type       dbo:number ;
+        dbo:year       "2013" ;
+        dbo:month      "9" ;
+        dbo:day        "15" ;
+        dbo:volcano    "Sinabung" ;
+        dbo:location   "Sumatra" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "3.17" ;
+        geo:long       "98.392" ;
+        dbo:elevation  "2460" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Holocene" ;
+        locah:Level    "2" .
+
+<30>    rdf:type       dbo:number ;
+        dbo:year       "2013" ;
+        dbo:month      "12" ;
+        dbo:day        "13" ;
+        dbo:volcano    "Okataina" ;
+        dbo:location   "New Zealand" ;
+        dbo:country    "New Zealand" ;
+        geo:lat        "-38.12" ;
+        geo:long       "176.5" ;
+        dbo:elevation  "1111" ;
+        dbo:eruption   "Lava dome" ;
+        dbo:status     "Historical" ;
+        bio:death      "1" .
+
+<31>    rdf:type       dbo:number ;
+        dbo:year       "2014" ;
+        dbo:month      "2" ;
+        dbo:day        "1" ;
+        dbo:volcano    "Sinabung" ;
+        dbo:location   "Sumatra" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "3.17" ;
+        geo:long       "98.392" ;
+        dbo:elevation  "2460" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Holocene" ;
+        bio:death      "17" ;
+        rsctx:injury   "3" .
+
+<32>    rdf:type                        dbo:number ;
+        dbo:year                        "2014" ;
+        dbo:month                       "2" ;
+        dbo:day                         "13" ;
+        dbo:volcano                     "Kelut" ;
+        dbo:location                    "Java" ;
+        dbo:country                     "Indonesia" ;
+        geo:lat                         "-7.93" ;
+        geo:long                        "112.308" ;
+        dbo:elevation                   "1731" ;
+        dbo:eruption                    "Stratovolcano" ;
+        dbo:status                      "Historical" ;
+        bio:death                       "7" ;
+        dbpac:Destruction_of_buildings  "4098" .
+
+<33>    rdf:type       dbo:number ;
+        dbo:year       "2014" ;
+        dbo:month      "9" ;
+        dbo:day        "27" ;
+        dbo:volcano    "On-take" ;
+        dbo:location   "Honshu-Japan" ;
+        dbo:country    "Japan" ;
+        geo:lat        "35.9" ;
+        geo:long       "137.48" ;
+        dbo:elevation  "3063" ;
+        dbo:eruption   "Complex volcano" ;
+        dbo:status     "Historical" ;
+        locah:Level    "3" ;
+        bio:death      "55" ;
+        rsctx:injury   "70" .
+
+<34>    rdf:type                        dbo:number ;
+        dbo:year                        "2014" ;
+        dbo:month                       "11" ;
+        dbo:day                         "10" ;
+        dbo:volcano                     "Kilauea" ;
+        dbo:location                    "Hawaiian Is" ;
+        dbo:country                     "United States" ;
+        geo:lat                         "19.425" ;
+        geo:long                        "-155.292" ;
+        dbo:elevation                   "1222" ;
+        dbo:eruption                    "Shield volcano" ;
+        dbo:status                      "Historical" ;
+        dbo:damage                      "14.5" ;
+        dbpac:Destruction_of_buildings  "1" .
+
+<35>    rdf:type                        dbo:number ;
+        dbo:year                        "2014" ;
+        dbo:month                       "11" ;
+        dbo:day                         "23" ;
+        dbo:volcano                     "Fogo" ;
+        dbo:location                    "Cape Verde Is" ;
+        dbo:country                     "Cape Verde" ;
+        geo:lat                         "14.95" ;
+        geo:long                        "-24.35" ;
+        dbo:elevation                   "2829" ;
+        dbo:eruption                    "Stratovolcano" ;
+        dbo:status                      "Historical" ;
+        dbpac:Destruction_of_buildings  "230" .
+
+<36>    rdf:type       dbo:number ;
+        dbo:year       "2014" ;
+        dbo:month      "12" ;
+        dbo:day        "18" ;
+        dbo:volcano    "Gamalama" ;
+        dbo:location   "Halmahera-Indonesia" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        ".8" ;
+        geo:long       "127.325" ;
+        dbo:elevation  "1715" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        bio:death      "1" ;
+        rsctx:injury   "4" .
+
+<37>    rdf:type       dbo:number ;
+        dbo:year       "2015" ;
+        dbo:month      "2" ;
+        dbo:day        "20" ;
+        dbo:volcano    "Sinabung" ;
+        dbo:location   "Sumatra" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "3.17" ;
+        geo:long       "98.392" ;
+        dbo:elevation  "2460" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Holocene" .
+
+<38>    rdf:type       dbo:number ;
+        dbo:year       "2015" ;
+        dbo:month      "4" ;
+        dbo:day        "22" ;
+        dbo:volcano    "Calbuco" ;
+        dbo:location   "Chile-S" ;
+        dbo:country    "Chile" ;
+        geo:lat        "-41.326" ;
+        geo:long       "-72.614" ;
+        dbo:elevation  "2003" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" .
+
+<39>    rdf:type       dbo:number ;
+        dbo:year       "2015" ;
+        dbo:month      "5" ;
+        dbo:day        "7" ;
+        dbo:volcano    "Karangetang [Api Siau]" ;
+        dbo:location   "Sangihe Is-Indonesia" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "2.78" ;
+        geo:long       "125.48" ;
+        dbo:elevation  "1784" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" .
+
+<40>    rdf:type       dbo:number ;
+        dbo:year       "2015" ;
+        dbo:month      "7" ;
+        dbo:day        "31" ;
+        dbo:volcano    "Manam" ;
+        dbo:location   "New Guinea-NE of" ;
+        dbo:country    "Papua New Guinea" ;
+        geo:lat        "-4.1" ;
+        geo:long       "145.061" ;
+        dbo:elevation  "1807" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        locah:Level    "2" ;
+        rsctx:injury   "2" .
+
+<41>    rdf:type       dbo:number ;
+        dbo:year       "2015" ;
+        dbo:month      "10" ;
+        dbo:day        "16" ;
+        dbo:volcano    "Sinabung" ;
+        dbo:location   "Sumatra" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "3.17" ;
+        geo:long       "98.392" ;
+        dbo:elevation  "2460" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Holocene" ;
+        bio:death      "1" .
+
+<42>    rdf:type       dbo:number ;
+        dbo:year       "2015" ;
+        dbo:month      "10" ;
+        dbo:volcano    "Okataina" ;
+        dbo:location   "New Zealand" ;
+        dbo:country    "New Zealand" ;
+        geo:lat        "-38.12" ;
+        geo:long       "176.5" ;
+        dbo:elevation  "1111" ;
+        dbo:eruption   "Lava dome" ;
+        dbo:status     "Historical" ;
+        bio:death      "1" .
+
+<43>    rdf:type                        dbo:number ;
+        dbo:year                        "2016" ;
+        dbo:month                       "5" ;
+        dbo:day                         "9" ;
+        dbo:volcano                     "Sinabung" ;
+        dbo:location                    "Sumatra" ;
+        dbo:country                     "Indonesia" ;
+        geo:lat                         "3.17" ;
+        geo:long                        "98.392" ;
+        dbo:elevation                   "2460" ;
+        dbo:eruption                    "Stratovolcano" ;
+        dbo:status                      "Holocene" ;
+        bio:death                       "1" ;
+        rsctx:injury                    "4" ;
+        dbpac:Destruction_of_buildings  "3" .
+
+<44>    rdf:type       dbo:number ;
+        dbo:year       "2016" ;
+        dbo:month      "5" ;
+        dbo:day        "21" ;
+        dbo:volcano    "Sinabung" ;
+        dbo:location   "Sumatra" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "3.17" ;
+        geo:long       "98.392" ;
+        dbo:elevation  "2460" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Holocene" ;
+        bio:death      "7" ;
+        rsctx:injury   "3" ;
+        dbo:damage     "100" .
+
+<45>    rdf:type       dbo:number ;
+        dbo:year       "2016" ;
+        dbo:month      "6" ;
+        dbo:day        "9" ;
+        dbo:volcano    "Yellowstone" ;
+        dbo:location   "US-Wyoming" ;
+        dbo:country    "United States" ;
+        geo:lat        "44.43" ;
+        geo:long       "-110.67" ;
+        dbo:elevation  "2805" ;
+        dbo:eruption   "Caldera" ;
+        dbo:status     "Tephrochronology" ;
+        bio:death      "1" .
+
+<46>    rdf:type             dbo:number ;
+        dbo:year             "2016" ;
+        dbo:month            "9" ;
+        dbo:day              "27" ;
+        dbo:volcano          "Rinjani" ;
+        dbo:location         "Lesser Sunda Is" ;
+        dbo:country          "Indonesia" ;
+        geo:lat              "-8.42" ;
+        geo:long             "116.47" ;
+        dbo:elevation        "3726" ;
+        dbo:eruption         "Stratovolcano" ;
+        dbo:status           "Historical" ;
+        moac:MissingPersons  "44" .
+
+<47>    rdf:type       dbo:number ;
+        dbo:year       "2016" ;
+        dbo:month      "10" ;
+        dbo:day        "8" ;
+        dbo:volcano    "Aso" ;
+        dbo:location   "Kyushu-Japan" ;
+        dbo:country    "Japan" ;
+        geo:lat        "32.88" ;
+        geo:long       "131.1" ;
+        dbo:elevation  "1592" ;
+        dbo:eruption   "Caldera" ;
+        dbo:status     "Historical" .
+
+<48>    rdf:type       dbo:number ;
+        dbo:year       "2017" ;
+        dbo:month      "3" ;
+        dbo:day        "15" ;
+        dbo:volcano    "Etna" ;
+        dbo:location   "Italy" ;
+        dbo:country    "Italy" ;
+        geo:lat        "37.734" ;
+        geo:long       "15.004" ;
+        dbo:elevation  "3350" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        rsctx:injury   "10" .
+
+<49>    rdf:type       dbo:number ;
+        dbo:year       "2017" ;
+        dbo:month      "4" ;
+        dbo:day        "13" ;
+        dbo:volcano    "Sinabung" ;
+        dbo:location   "Sumatra" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "3.17" ;
+        geo:long       "98.392" ;
+        dbo:elevation  "2460" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Holocene" ;
+        locah:Level    "2" .
+
+<50>    rdf:type       dbo:number ;
+        dbo:year       "2017" ;
+        dbo:month      "6" ;
+        dbo:day        "6" ;
+        dbo:volcano    "Fuego" ;
+        dbo:location   "Guatemala" ;
+        dbo:country    "Guatemala" ;
+        geo:lat        "14.473" ;
+        geo:long       "-90.88" ;
+        dbo:elevation  "3763" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        locah:Level    "2" .
+
+<51>    rdf:type       dbo:number ;
+        dbo:year       "2017" ;
+        dbo:month      "7" ;
+        dbo:day        "1" ;
+        dbo:volcano    "Dieng Volc Complex" ;
+        dbo:location   "Java" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "-7.2" ;
+        geo:long       "109.92" ;
+        dbo:elevation  "2565" ;
+        dbo:eruption   "Complex volcano" ;
+        dbo:status     "Historical" ;
+        bio:death      "8" ;
+        rsctx:injury   "11" .
+
+<52>    rdf:type       dbo:number ;
+        dbo:year       "2017" ;
+        dbo:month      "9" ;
+        dbo:day        "12" ;
+        dbo:volcano    "Campi Flegrei" ;
+        dbo:location   "Italy" ;
+        dbo:country    "Italy" ;
+        geo:lat        "40.827" ;
+        geo:long       "14.139" ;
+        dbo:elevation  "458" ;
+        dbo:eruption   "Caldera" ;
+        dbo:status     "Historical" ;
+        bio:death      "3" .
+
+<53>    rdf:type       dbo:number ;
+        dbo:year       "2017" ;
+        dbo:month      "9" ;
+        dbo:day        "23" ;
+        dbo:volcano    "Aoba" ;
+        dbo:location   "Vanuatu-SW Pacific" ;
+        dbo:country    "Vanuatu" ;
+        geo:lat        "-15.4" ;
+        geo:long       "167.83" ;
+        dbo:elevation  "1496" ;
+        dbo:eruption   "Shield volcano" ;
+        dbo:status     "Historical" .
+
+<54>    rdf:type       dbo:number ;
+        dbo:year       "2017" ;
+        dbo:month      "12" ;
+        dbo:day        "18" ;
+        dbo:volcano    "Merapi" ;
+        dbo:location   "Java" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "-7.542" ;
+        geo:long       "110.442" ;
+        dbo:elevation  "2947" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        bio:death      "8" ;
+        rsctx:injury   "8" .
+
+<55>    rdf:type       dbo:number ;
+        dbo:year       "2017" ;
+        dbo:month      "12" ;
+        dbo:day        "27" ;
+        dbo:volcano    "Sinabung" ;
+        dbo:location   "Sumatra" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "3.17" ;
+        geo:long       "98.392" ;
+        dbo:elevation  "2460" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Holocene" .
+
+<56>    rdf:type       dbo:number ;
+        dbo:year       "2018" ;
+        dbo:month      "1" ;
+        dbo:day        "5" ;
+        dbo:volcano    "Kadovar" ;
+        dbo:location   "New Guinea-NE of" ;
+        dbo:country    "Papua New Guinea" ;
+        geo:lat        "-3.62" ;
+        geo:long       "144.62" ;
+        dbo:elevation  "365" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Holocene" .
+
+<57>    rdf:type       dbo:number ;
+        dbo:year       "2018" ;
+        dbo:month      "1" ;
+        dbo:day        "13" ;
+        dbo:volcano    "Mayon" ;
+        dbo:location   "Luzon-Philippines" ;
+        dbo:country    "Philippines" ;
+        geo:lat        "13.257" ;
+        geo:long       "123.685" ;
+        dbo:elevation  "2462" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        rsctx:injury   "1972" ;
+        dbo:damage     "3.72" .
+
+<58>    rdf:type       dbo:number ;
+        dbo:year       "2018" ;
+        dbo:month      "1" ;
+        dbo:day        "23" ;
+        dbo:volcano    "Kusatsu-Shirane" ;
+        dbo:location   "Honshu-Japan" ;
+        dbo:country    "Japan" ;
+        geo:lat        "36.62" ;
+        geo:long       "138.55" ;
+        dbo:elevation  "2176" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        bio:death      "1" ;
+        rsctx:injury   "11" .
+
+<59>    rdf:type       dbo:number ;
+        dbo:year       "2018" ;
+        dbo:month      "2" ;
+        dbo:day        "1" ;
+        dbo:volcano    "Kilauea" ;
+        dbo:location   "Hawaiian Is" ;
+        dbo:country    "United States" ;
+        geo:lat        "19.425" ;
+        geo:long       "-155.292" ;
+        dbo:elevation  "1222" ;
+        dbo:eruption   "Shield volcano" ;
+        dbo:status     "Historical" ;
+        locah:Level    "1" ;
+        bio:death      "1" ;
+        rsctx:injury   "3" .
+
+<60>    rdf:type       dbo:number ;
+        dbo:year       "2018" ;
+        dbo:month      "2" ;
+        dbo:day        "9" ;
+        dbo:volcano    "Kadovar" ;
+        dbo:location   "New Guinea-NE of" ;
+        dbo:country    "Papua New Guinea" ;
+        geo:lat        "-3.62" ;
+        geo:long       "144.62" ;
+        dbo:elevation  "365" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Holocene" .
+
+<61>    rdf:type       dbo:number ;
+        dbo:year       "2018" ;
+        dbo:month      "3" ;
+        dbo:day        "21" ;
+        dbo:volcano    "Ijen" ;
+        dbo:location   "Java" ;
+        dbo:country    "Indonesia" ;
+        geo:lat        "-8.058" ;
+        geo:long       "114.242" ;
+        dbo:elevation  "2799" ;
+        dbo:eruption   "Stratovolcano" ;
+        dbo:status     "Historical" ;
+        rsctx:injury   "30" .
+
+<62>    rdf:type                        dbo:number ;
+        dbo:year                        "2018" ;
+        dbo:month                       "4" ;
+        dbo:day                         "28" ;
+        dbo:volcano                     "Kilauea" ;
+        dbo:location                    "Hawaiian Is" ;
+        dbo:country                     "United States" ;
+        geo:lat                         "19.425" ;
+        geo:long                        "-155.292" ;
+        dbo:elevation                   "1222" ;
+        dbo:eruption                    "Shield volcano" ;
+        dbo:status                      "Historical" ;
+        locah:Level                     "1" ;
+        dbpac:Destruction_of_buildings  "2" .
+
+<63>    rdf:type       dbo:number ;
+        dbo:year       "2018" ;
+        dbo:month      "4" ;
+        dbo:volcano    "Aoba" ;
+        dbo:location   "Vanuatu-SW Pacific" ;
+        dbo:country    "Vanuatu" ;
+        geo:lat        "-15.4" ;
+        geo:long       "167.83" ;
+        dbo:elevation  "1496" ;
+        dbo:eruption   "Shield volcano" ;
+        dbo:status     "Historical" ;
+        locah:Level    "3" ;
+        bio:death      "4" .

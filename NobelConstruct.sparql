@@ -1,0 +1,143 @@
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX gn: <http://www.geonames.org/ontology/>
+PREFIX sch: <http://schema.org/>
+PREFIX geof: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl>
+PREFIX nobel: <http://data.nobelprize.org/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+CONSTRUCT {
+	
+	?Person rdf:type dbo:Person;
+		rdf:type nobel:Laureate;
+		owl:sameAs ?PersonResource;
+		dbp:number ?ID;
+		foaf:givenName ?Firstname;
+		foaf:familyName ?Surname;
+		dbo:birthDate ?BornDate;
+		dbo:deathDate ?DiedDate;
+		dbo:birthPlace ?BornCountry;
+		dbo:birthPlace ?BornCity;
+		dbo:deathPlace ?DiedCountry;
+		dbo:deathPlace ?DiedCity;
+		foaf:gender ?Gender;
+		sch:memberOf ?Organization;
+		sch:awarded ?PrixNobel;
+		nobel:laureateAward ?PrixNobel.
+		
+	?WinningOrganization rdf:type dbo:Organisation;
+		owl:sameAs ?WinningOrganizationResource;
+		dbp:number ?ID;
+		foaf:givenName ?Firstname;
+		foaf:gender ?Gender;
+		sch:awarded ?PrixNobel;
+		nobel:laureateAward ?PrixNobel.
+		
+	?Organization rdf:type dbo:Organisation;
+		owl:sameAs ?OrganizationResource;
+		dbo:name ?Organization_name;
+		dbo:city ?OrganizationCity;
+		dbo:country ?OrganizationCountry;
+		sch:awarded ?PrixNobel;
+		dbo:nobelLaureates ?Person;
+		sch:member ?Person.
+		
+	?PrixNobel rdf:type dbo:NobelPrize;
+  		dbo:category ?CategoryNobel;
+  		dbo:year ?Year;
+  		sch:Integer ?SHARE;
+  		dbo:comment ?Motivation;
+  		sch:award ?Person;
+  		sch:award ?WinningOrganization;
+  		sch:award ?Organization.
+  		
+  	?CategoryNobel rdfs:label ?Category.
+  	
+  	?OrganizationCountry rdf:type dbo:Country;
+  		owl:sameAs ?OrganizationCountryResource;
+  		rdf:type geof:Country;
+  		dbo:name ?Organization_country;
+  		sch:containsPlace ?OrganizationCity;
+  		geof:xyCoordinates ?geo_point_2d.
+  		
+  	?OrganizationCity rdf:type dbo:City;
+  		owl:sameAs ?OrganizationCityResource;
+  		dbo:name ?Organization_city;
+  		sch:containedInPlace ?OrganizationCountry.
+  	
+  	?BornCountry rdf:type dbo:Country;
+  		rdf:type geof:Country;
+  		owl:sameAs ?BornCountryResource;
+  		dbo:name ?Born_country;
+  		gn:countryCode ?Born_country_code;
+  		sch:containsPlace ?BornCity.
+  		
+  	?BornCity rdf:type dbo:City;
+  		owl:sameAs ?BornCityResource;
+  		dbo:name ?Born_city;
+  		sch:containedInPlace ?BornCountry.
+  	
+  	?DiedCountry rdf:type dbo:Country;
+  		rdf:type geof:Country;
+  		owl:sameAs ?DiedCountryResource;
+  		dbo:name ?Died_country;
+  		gn:countryCode ?Died_country_code;
+  		sch:containsPlace ?DiedCity.
+  	
+  	?DiedCity rdf:type dbo:City;
+  		owl:sameAs ?DiedCityResource;
+  		dbo:name ?Died_city;
+  		sch:containedInPlace ?DiedCountry.
+  		
+  		sch:awarded rdf:type owl:ObjectProperty;
+			owl:inverseOf sch:award.
+}
+FROM <file:NobelData.csv#delimiter=%3B;encoding=utf-8>
+WHERE {
+	BIND(REPLACE(STR(?Firstname)," ","_") AS ?FirstName)
+	#BIND(REPLACE(STR(?FirstnameNoS),"\\.", "") AS ?FirstnameNoSpace)
+	BIND(REPLACE(STR(?Surname)," ","_") AS ?SurName)
+	#BIND(REPLACE(STR(?SurnameNoS),"\\.","") AS ?SurnameNoSpace)
+	BIND(URI(IF((?Gender="male"||?Gender="female"), STR(CONCAT(?FirstName,"_", ?SurName)), ?nothing)) AS ?Person)
+	BIND(URI(IF(?Gender="org", ?FirstName, ?nothing)) AS ?WinningOrganization)
+	BIND(URI(CONCAT("http://dbpedia.org/resource/",?FirstName,"_",?SurName)) AS ?PersonResource)
+	BIND(URI(CONCAT("http://dbpedia.org/resource/",?FirstName)) AS ?WinningOrganizationResource)
+	BIND(STRDT(?Id, xsd:integer) AS ?ID)
+	BIND(STRDT(?Born, xsd:dateTimes) AS ?BornDate)
+	BIND(STRDT(?Died, xsd:dateTimes) AS ?DiedDate)
+	BIND(REPLACE(STR(?Born_country)," ","_") AS ?Born_Country)
+	BIND(URI(?Born_Country) AS ?BornCountry)
+	BIND(URI(CONCAT("http://dbpedia.org/resource/",?Born_Country)) AS ?BornCountryResource)
+	BIND(REPLACE(STR(?Born_city),", ","_") AS ?Born_cityNoS)
+	BIND(REPLACE(STR(?Born_cityNoS)," ","_") AS ?Born_City)
+	BIND(URI(?Born_City) AS ?BornCity)
+	BIND(URI(CONCAT("http://dbpedia.org/resource/",?Born_City)) AS ?BornCityResource)
+	BIND(REPLACE(STR(?Died_country)," ","_") AS ?Died_Country)
+	BIND(URI(?Died_Country) AS ?DiedCountry)
+	BIND(URI(CONCAT("http://dbpedia.org/resource/",?Died_Country)) AS ?DiedCountryResource)
+	BIND(REPLACE(STR(?Died_city),", ","_") AS ?Died_cityNoS)
+	BIND(REPLACE(STR(?Died_cityNoS)," ","_") AS ?Died_City)
+	BIND(URI(?Died_City) AS ?DiedCity)
+	BIND(URI(CONCAT("http://dbpedia.org/resource/",?Died_City)) AS ?DiedCityResource)
+	BIND(REPLACE(STR(?Organization_name)," ","_") AS ?Organization_nameNoS)
+	BIND(REPLACE(STR(?Organization_nameNoS),"\\.","") AS ?Organization_Entity)
+	BIND(URI(?Organization_Entity) AS ?Organization)
+	BIND(URI(CONCAT("http://dbpedia.org/resource/",?Organization_Entity)) AS ?OrganizationResource)
+	BIND(REPLACE(STR(?Organization_city),", ","_") AS ?Organization_cityNoS)
+	BIND(REPLACE(STR(?Organization_cityNoS)," ","_") AS ?Organization_City)
+	BIND(URI(?Organization_City) AS ?OrganizationCity)
+	BIND(URI(CONCAT("http://dbpedia.org/resource/",?Organization_City)) AS ?OrganizationCityResource)
+	BIND(REPLACE(STR(?Organization_country)," ","_") AS ?Organization_Country)
+	BIND(URI(?Organization_Country) AS ?OrganizationCountry)
+	BIND(URI(CONCAT("http://dbpedia.org/resource/",?Organization_Country)) AS ?OrganizationCountryResource)
+	BIND(URI(CONCAT("Nobel","_", ?Year,"_", ?Category)) AS ?PrixNobel)
+	BIND(URI(?Category) As ?CategoryNobel)
+	BIND(STRDT(?Share, xsd:integer) AS ?SHARE)
+	}
+
