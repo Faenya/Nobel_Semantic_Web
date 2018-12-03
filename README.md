@@ -14,6 +14,7 @@ Other datasets used in more elaborated queries can be found in the folder with t
 ## Useful links
 * [Slides](https://docs.google.com/presentation/d/1h9Aex41BXu1eRO7wmU9PQoPDXEkc67qRg4UxblKwsYc/edit?usp=sharing)
 * [Raw data](https://public.opendatasoft.com/explore/dataset/nobel-prize-laureates/)
+* [Tarql](https://github.com/tarql/tarql)
 ### Authors
 Chanez Amri, Martin Ars, Alexis Claveau, 
 M1 Informatique, Université de Nantes
